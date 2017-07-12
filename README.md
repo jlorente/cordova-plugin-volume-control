@@ -11,9 +11,9 @@ This plugin provides a simple way to interact with the volume of your `UIWebView
 
 ## Plugin setup
 
-Using this plugin requires [Cordova iOS](https://github.com/apache/cordova-ios).
+Using this plugin requires [Cordova iOS](https://github.com/apache/cordova-ios) and [Cordova Android](https://github.com/apache/cordova-android).
 
-1. `cordova plugin add cordova-volume-control`
+1. `cordova plugin add cordova-plugin-volume-control`--save
 
 
 ## Javascript interface
