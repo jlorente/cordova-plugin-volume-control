@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin
   id="cordova-plugin-volume-control"
-  version="0.1.5"
+  version="0.1.6"
   xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
   <author email="jose.lorente.martin@gmail.com" href="http://lorentech.es">
@@ -39,6 +39,6 @@
      <js-module src="www/VolumeControl.js" name="VolumeControl">
         <clobbers target="cordova.plugins.VolumeControl" />
      </js-module>
-     <source-file src="src/android/VolumeControl.java" target-dir="src/com/develcode/plugins/volumeControl" />
+     <source-file src="src/android/VolumeControl.java" target-dir="src/com/lorentech/plugins/volumeControl" />
   </platform>
 </plugin>
