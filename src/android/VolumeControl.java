@@ -92,7 +92,7 @@ public class VolumeControl extends CordovaPlugin {
 			try{
 				//Mute or Unmute volume
 				int volume = getCurrentVolume();
-				callbackContext.success(volume == 0);
+				callbackContext.success(volume == 0 ? 0 : 1);
 			} catch (Exception e) {
 				LOG.d(TAG, "Error checking mute volume " + e);
 				actionState = false;
