@@ -8,7 +8,7 @@
  * At 04/28/2017 working in app compiled with Cordova 6.5.0
  */
 
-package com.develcode.plugins.volumeControl;
+package com.lorentech.cordova.plugins.volumeControl;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
