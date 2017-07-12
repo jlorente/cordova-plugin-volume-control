@@ -65,8 +65,8 @@
 - (void)setVolume:(CDVInvokedUrlCommand*)command
 {
     CDVPluginResult* pluginResult = nil;
-    int _volume = [[command argumentAtIndex:0] integerValue];
-    float volume = _volume / 100.0
+    float volume = [[command argumentAtIndex:0] floatValue];
+
     DLog(@"setVolume: [%f]", volume);
 
     Class avSystemControllerClass = NSClassFromString(@"AVSystemController");

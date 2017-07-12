@@ -23,9 +23,9 @@ exports.getVolume = function(success, error) {
 };
 
 exports.setVolume = function(volume, success, error) {
-  /*if (volume > 1) {
+  (volume > 1) {
     volume /= 100;
-  }*/
+  }
   exec(success, error, 'VolumeControl', 'setVolume', [volume * 1]);
 };
 
