@@ -39,8 +39,8 @@ public class VolumeControl extends CordovaPlugin {
 		if (SET.equals(action)) {
 			try {
 				//Get the volume value to set
-				float volume = getVolumeToSet(args.getFloat(0));
-				int volume = (int)Math.round(volume * 100.0f);
+				int volumeToSet = (int) Math.round(args.getDouble(0) * 100.0f)
+				int volume = getVolumeToSet(volumeToSet);
 				boolean play_sound;
 
 				if (args.length() > 1 && !args.isNull(1)) {
@@ -71,7 +71,7 @@ public class VolumeControl extends CordovaPlugin {
 			try{
 				//Mute or Unmute volume
 				int volume = getCurrentVolume();
-				float _volumeToSet = args.getFloat(0);
+				float _volumeToSet = (float)args.getDouble(0);
 				int volumeToSet = (int)Math.round(_volumeToSet * 100.0f);
 
 				if(volume > 1){
