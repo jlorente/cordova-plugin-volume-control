@@ -1,5 +1,5 @@
 {
-  "name": "cordova-volume-control",
+  "name": "cordova-plugin-volume-control",
   "version": "0.1.0",
   "description": "Cordova Volume Control Plugin",
   "cordova": {
