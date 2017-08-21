@@ -36,9 +36,6 @@
      <config-file target="AndroidManifest.xml" parent="/manifest">
         <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
      </config-file>
-     <js-module src="www/VolumeControl.js" name="VolumeControl">
-        <clobbers target="cordova.plugins.VolumeControl" />
-     </js-module>
      <source-file src="src/android/VolumeControl.java" target-dir="src/com/lorentech/plugins/volumeControl" />
   </platform>
 </plugin>
