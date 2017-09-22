@@ -39,7 +39,7 @@ public class VolumeControl extends CordovaPlugin {
 		if (SET.equals(action)) {
 			try {
 				//Get the volume value to set
-				int volumeToSet = (int) Math.round(args.getDouble(0) * 100.0f)
+				int volumeToSet = (int) Math.round(args.getDouble(0) * 100.0f);
 				int volume = getVolumeToSet(volumeToSet);
 				boolean play_sound;
 
